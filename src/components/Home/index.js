@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import SliderWidget from '../Utils/Slider';
-
+import Subscriptions from '../Utils/Subscribe';
 import { URL_Home } from '../Utils/paths';
 
 class Home extends Component {
@@ -21,6 +21,7 @@ class Home extends Component {
     return (
       <>
         <SliderWidget slides={this.state.home.slider} />
+        <Subscriptions />
       </>
     );
   }

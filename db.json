@@ -86,7 +86,14 @@
     ]
   },
   "subscriptions": [
-    
+    {
+      "email": "yonngelay@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "ye@gmail.com",
+      "id": 2
+    }
   ],
   "teams": [
     {
