@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import SliderWidget from '../Utils/Slider';
 import Subscriptions from '../Utils/Subscribe';
+import Blocks from './blocks';
+
 import { URL_Home } from '../Utils/paths';
 
 class Home extends Component {
@@ -22,6 +24,7 @@ class Home extends Component {
       <>
         <SliderWidget slides={this.state.home.slider} />
         <Subscriptions />
+        <Blocks blocks={this.state.home.blocks} />
       </>
     );
   }
