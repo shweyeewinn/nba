@@ -40,7 +40,12 @@ class Poll extends Component {
         <img alt={item.team} src={`/images/teams/${item.logo}`} />
         <h4>{positions[index]}</h4>
         <div>{item.count} Votes</div>
-        <button onClick={() => this.addCount(item.count, item.id)}>VOTE</button>
+        <button
+          className="vote_button"
+          onClick={() => this.addCount(item.count, item.id)}
+        >
+          VOTE
+        </button>
       </div>
     ));
   };

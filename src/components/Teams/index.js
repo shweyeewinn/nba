@@ -22,7 +22,7 @@ class Teams extends Component {
   renderList = filtered =>
     filtered.map((item, index) => (
       <CSSTransition key={index} timeout={500} className="fade team_item">
-        <Link to={`/team/${item.name}`}>
+        <Link to={`/teams/${item.name}`}>
           <img alt={item.name} src={`/images/teams/${item.logo}`} />
           <p className="team_name">{item.name}</p>
         </Link>
@@ -33,7 +33,7 @@ class Teams extends Component {
     const keyword = event.target.value;
     if (keyword !== '') {
       const list = this.state.teams.filter(item => {
-        //return array with new value
+        //filter return array with new value
         return item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1;
       });
       this.setState({

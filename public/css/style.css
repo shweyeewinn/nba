@@ -257,6 +257,19 @@ footer {
   font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
 }
+.poll_container .vote_button {
+  background-color: #0d6ab4;
+  color: #fff;
+  outline: none;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.poll_container .vote_button:hover {
+  background-color: #074679;
+}
 
 /*===================================
                 TEAMS
